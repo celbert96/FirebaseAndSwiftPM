@@ -75,11 +75,10 @@ import os.log
             return
         }
         
-        //Task {
-            unwrappedViewController.navigationController?.isNavigationBarHidden = false
-            unwrappedSpinnerView.removeFromSuperview()
-            logger.info("Spinner has been dismissed")
-        //}
+        unwrappedViewController.navigationController?.isNavigationBarHidden = false
+        unwrappedSpinnerView.removeFromSuperview()
+        logger.info("Spinner has been dismissed")
+        
         spinnerView = nil
         callingViewController = nil
     }
