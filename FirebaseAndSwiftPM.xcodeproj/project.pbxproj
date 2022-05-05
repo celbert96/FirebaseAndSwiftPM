@@ -22,7 +22,6 @@
 		88862A8427EC2BDF00452326 /* FirebaseAndSwiftPMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88862A8327EC2BDF00452326 /* FirebaseAndSwiftPMTests.swift */; };
 		88862A8E27EC2BDF00452326 /* FirebaseAndSwiftPMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88862A8D27EC2BDF00452326 /* FirebaseAndSwiftPMUITests.swift */; };
 		88862A9027EC2BDF00452326 /* FirebaseAndSwiftPMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88862A8F27EC2BDF00452326 /* FirebaseAndSwiftPMUITestsLaunchTests.swift */; };
-		88862A9D27EC2C6900452326 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88862A9C27EC2C6900452326 /* GoogleService-Info.plist */; };
 		88862AA027EC2EE400452326 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 88862A9F27EC2EE400452326 /* FirebaseAnalytics */; };
 		88862AA227EC2EE400452326 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 88862AA127EC2EE400452326 /* FirebaseAuth */; };
 		88862AA427EC2EE400452326 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 88862AA327EC2EE400452326 /* FirebaseCrashlytics */; };
@@ -46,6 +45,8 @@
 		88DDD62327F02EDF00292B00 /* AccountRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DDD62227F02EDF00292B00 /* AccountRegisterViewController.swift */; };
 		88DDD62527F02EFE00292B00 /* ProfileSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DDD62427F02EFE00292B00 /* ProfileSetupViewController.swift */; };
 		88DDD62A27F0312700292B00 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DDD62927F0312700292B00 /* UserService.swift */; };
+		B72D558E28248AEF008F2D48 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B72D558D28248AEF008F2D48 /* GoogleService-Info.plist */; };
+		B72D559028248DD0008F2D48 /* UserRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72D558F28248DD0008F2D48 /* UserRepositoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +84,6 @@
 		88862A8927EC2BDF00452326 /* FirebaseAndSwiftPMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseAndSwiftPMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88862A8D27EC2BDF00452326 /* FirebaseAndSwiftPMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAndSwiftPMUITests.swift; sourceTree = "<group>"; };
 		88862A8F27EC2BDF00452326 /* FirebaseAndSwiftPMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAndSwiftPMUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		88862A9C27EC2C6900452326 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		88862AAA27ED666F00452326 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		88862AAD27ED668C00452326 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		88862AB027ED66A700452326 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -102,6 +102,8 @@
 		88DDD62227F02EDF00292B00 /* AccountRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRegisterViewController.swift; sourceTree = "<group>"; };
 		88DDD62427F02EFE00292B00 /* ProfileSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSetupViewController.swift; sourceTree = "<group>"; };
 		88DDD62927F0312700292B00 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		B72D558D28248AEF008F2D48 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B72D558F28248DD0008F2D48 /* UserRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,7 +193,7 @@
 				88862A7527EC2BDF00452326 /* Assets.xcassets */,
 				88862A7727EC2BDF00452326 /* LaunchScreen.storyboard */,
 				88862A7A27EC2BDF00452326 /* Info.plist */,
-				88862A9C27EC2C6900452326 /* GoogleService-Info.plist */,
+				B72D558D28248AEF008F2D48 /* GoogleService-Info.plist */,
 			);
 			path = FirebaseAndSwiftPM;
 			sourceTree = "<group>";
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				88862A8327EC2BDF00452326 /* FirebaseAndSwiftPMTests.swift */,
+				B72D558F28248DD0008F2D48 /* UserRepositoryTests.swift */,
 			);
 			path = FirebaseAndSwiftPMTests;
 			sourceTree = "<group>";
@@ -402,9 +405,9 @@
 				88862A7927EC2BDF00452326 /* LaunchScreen.storyboard in Resources */,
 				8802450B27FBE86E00D1868F /* Main.storyboard in Resources */,
 				88862AAB27ED666F00452326 /* Onboarding.storyboard in Resources */,
-				88862A9D27EC2C6900452326 /* GoogleService-Info.plist in Resources */,
 				88039BA0280FCAEC00071674 /* SpinnerView.xib in Resources */,
 				88862A7627EC2BDF00452326 /* Assets.xcassets in Resources */,
+				B72D558E28248AEF008F2D48 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B72D559028248DD0008F2D48 /* UserRepositoryTests.swift in Sources */,
 				88862A8427EC2BDF00452326 /* FirebaseAndSwiftPMTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,6 +630,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -654,6 +659,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

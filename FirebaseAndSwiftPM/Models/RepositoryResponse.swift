@@ -11,6 +11,15 @@ enum RepositoryResponse<T> {
     case success(T? = nil)
     case failed(Error)
     
+    func get() -> Any? {
+        switch self {
+        case .success(let optional):
+            return optional
+        case .failed(let error):
+            return error
+        }
+    }
+    
     static func ==(lhs: RepositoryResponse<T>, rhs: RepositoryResponse<T>) -> Bool {
         switch(lhs, rhs) {
         case (.success(_), .success(_)):

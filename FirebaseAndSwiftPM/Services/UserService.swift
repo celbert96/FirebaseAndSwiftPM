@@ -31,4 +31,12 @@ class UserService {
     func addUser(user: User, photo: UIImage?) async -> RepositoryResponse<User> {
         return await userRepository.addUser(user: user, photo: photo)
     }
+    
+    func updateUser(uid: String, user: User) async -> RepositoryResponse<User>{
+        return await userRepository.updateUser(uid: uid, user: user)
+    }
+    
+    func deleteUser(uid: String) async -> RepositoryResponse<User> {
+        return await userRepository.deleteUser(uid: uid)
+    }
 }
