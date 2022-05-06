@@ -69,16 +69,21 @@ class ProfileSetupViewController: UIViewController {
         Task {
             SpinnerUtility.shared.displaySpinnerOverViewController(spinnerText: "Creating account...", viewController: self)
             let userAddResult = await UserService(userRepository: UserRepository()).addUser(user: user, photo: profilePhoto)
-            if userAddResult == .success() {
-                let homeStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                let homeViewController = homeStoryboard.instantiateViewController(withIdentifier: "MainVC") as! MainViewController
-                self.navigationController?.setViewControllers([homeViewController], animated: true)
-            } else {
-                showAlert(title: "Failed", message: "Failed to create profile. Please try again.")
+            switch userAddResult {
+            case .success(_):
+                moveToMainViewController()
+            case .failed(let err):
+                showAlert(title: "Failed", message: err.localizedDescription)
             }
             
             SpinnerUtility.shared.dismissSpinner()
         }
+    }
+    
+    private func moveToMainViewController() {
+        let homeStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeViewController = homeStoryboard.instantiateViewController(withIdentifier: "MainVC") as! MainViewController
+        self.navigationController?.setViewControllers([homeViewController], animated: true)
     }
 }
 
